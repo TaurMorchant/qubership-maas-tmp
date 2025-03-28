@@ -128,6 +128,7 @@ func TestKafkaInstanceOperations(t *testing.T) {
 
 		{
 			//test fail set default for not existed instance
+			//
 			_, err = dao.SetDefaultInstance(ctx, notExistedInstance)
 			assert.Error(t, err)
 		}
