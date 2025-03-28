@@ -120,6 +120,18 @@ func TestKafkaInstanceOperations(t *testing.T) {
 			assert.Error(t, err)
 		}
 
+		{
+			//test fail update registration for not existed instance
+			_, err = dao.UpdateInstanceRegistration(ctx, notExistedInstance)
+			assert.Error(t, err)
+		}
+
+		{
+			//test fail set default for not existed instance
+			_, err = dao.SetDefaultInstance(ctx, notExistedInstance)
+			assert.Error(t, err)
+		}
+
 		// test update
 		// check error delete default instance
 		_, err = dao.RemoveInstanceRegistration(ctx, "backup")
