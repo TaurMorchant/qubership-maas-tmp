@@ -215,7 +215,11 @@ func (k KafkaInstancesDaoImpl) RemoveInstanceRegistration(ctx context.Context, i
 	})
 
 	if err != nil {
-		return instance, utils.LogError(log, ctx, "Error removing %s instance by registration id: '%s' err: %w", instance.BrokerType(), instance.GetId(), err)
+		if instance == nil {
+			return nil, utils.LogError(log, ctx, "Error removing instance by registration id: '%s' err: %w", instanceId, err)
+		} else {
+			return instance, utils.LogError(log, ctx, "Error removing %s instance by registration id: '%s' err: %w", instance.BrokerType(), instance.GetId(), err)
+		}
 	}
 
 	log.InfoC(ctx, "Instance was deleted successfully by registration id: %v", instance.GetId())

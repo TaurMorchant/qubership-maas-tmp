@@ -107,9 +107,16 @@ func TestKafkaInstanceOperations(t *testing.T) {
 			assert.Error(t, err)
 		}
 
+		notExistedInstance := &model.KafkaInstance{
+			Id:           "not_existed_id",
+			Addresses:    nil,
+			Default:      false,
+			MaasProtocol: "PLAINTEXT",
+		}
+
 		{
 			//test fail remove not existed instance
-			_, err = dao.RemoveInstanceRegistration(ctx, "not_existed_id")
+			_, err = dao.RemoveInstanceRegistration(ctx, notExistedInstance.Id)
 			assert.Error(t, err)
 		}
 
