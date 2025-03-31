@@ -1153,3 +1153,5 @@ func applyRabbitConfigurationWithRetry(ctx context.Context, cfg interface{}, nam
 
 	return result, nil
 }
+
+//
