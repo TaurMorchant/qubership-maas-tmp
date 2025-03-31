@@ -1132,13 +1132,14 @@ func applyRabbitConfigurationWithRetry(ctx context.Context, cfg interface{}, nam
 	attemptNumber := 1
 
 	operation := func() error {
-		log.DebugC(ctx, "Try to apply rabbit configuration with retry. Attempt number: ", attemptNumber)
+		log.InfoC(ctx, "Try to apply rabbit configuration with retry. Attempt number: ", attemptNumber)
 		attemptNumber++
 		result, err = configWithRabbit.ApplyRabbitConfiguration(ctx, cfg, namespace)
 		if err != nil {
+			log.ErrorC(ctx, "Attempt to apply rabbit configuration is failed:", err.Error())
 			return err
 		}
-		log.DebugC(ctx, "Configuration successfully applied")
+		log.InfoC(ctx, "Configuration successfully applied")
 		return nil
 	}
 
