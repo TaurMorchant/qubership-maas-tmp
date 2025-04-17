@@ -6,8 +6,8 @@ package postdeploy
 
 import (
 	context "context"
-	model "github.com/netcracker/qubership-maas/model"
-	utils "github.com/netcracker/qubership-maas/utils"
+	model "maas/maas-service/model"
+	utils "maas/maas-service/utils"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"

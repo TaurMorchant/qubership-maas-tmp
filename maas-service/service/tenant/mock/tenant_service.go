@@ -6,7 +6,7 @@ package mock_tenant
 
 import (
 	context "context"
-	model "github.com/netcracker/qubership-maas/model"
+	model "maas/maas-service/model"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"

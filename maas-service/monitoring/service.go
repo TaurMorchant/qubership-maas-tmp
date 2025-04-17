@@ -3,10 +3,10 @@ package monitoring
 import (
 	"context"
 	"github.com/netcracker/qubership-core-lib-go/v3/logging"
-	"github.com/netcracker/qubership-maas/dr"
-	"github.com/netcracker/qubership-maas/model"
-	"github.com/netcracker/qubership-maas/utils"
-	"github.com/netcracker/qubership-maas/watchdog"
+	"maas/maas-service/dr"
+	"maas/maas-service/model"
+	"maas/maas-service/utils"
+	"maas/maas-service/watchdog"
 )
 
 var log logging.Logger

@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 	"github.com/lib/pq"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/utils"
 )
 
 type KafkaRole string

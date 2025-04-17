@@ -2,9 +2,9 @@ package controller
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/netcracker/qubership-maas/model"
-	"github.com/netcracker/qubership-maas/service/kafka"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/model"
+	"maas/maas-service/service/kafka"
+	"maas/maas-service/utils"
 	"net/http"
 )
 

@@ -2,7 +2,7 @@ package schema
 
 import (
 	"github.com/go-pg/migrations/v8"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/utils"
 	"strings"
 )
 

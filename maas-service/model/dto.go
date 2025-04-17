@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
-	"github.com/netcracker/qubership-maas/msg"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/msg"
+	"maas/maas-service/utils"
 	"reflect"
 	"strconv"
 

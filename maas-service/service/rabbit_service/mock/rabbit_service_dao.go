@@ -6,7 +6,7 @@ package mock_rabbit_service
 
 import (
 	context "context"
-	model "github.com/netcracker/qubership-maas/model"
+	model "maas/maas-service/model"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"

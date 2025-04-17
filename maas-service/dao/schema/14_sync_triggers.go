@@ -3,7 +3,7 @@ package schema
 import (
 	"fmt"
 	"github.com/go-pg/migrations/v8"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/utils"
 )
 
 func init() {

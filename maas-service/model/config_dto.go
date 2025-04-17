@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/netcracker/qubership-maas/msg"
+	"maas/maas-service/msg"
 )
 
 type OnEntityExistsEnum int

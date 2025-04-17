@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"github.com/go-resty/resty/v2"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/utils"
 )
 
 //go:generate mockgen -source=rabbit_httphelper.go -destination=mock/httphelper.go

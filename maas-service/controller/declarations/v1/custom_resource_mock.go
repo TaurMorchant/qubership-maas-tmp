@@ -6,7 +6,7 @@ package v1
 
 import (
 	context "context"
-	cr "github.com/netcracker/qubership-maas/service/cr"
+	cr "maas/maas-service/service/cr"
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"

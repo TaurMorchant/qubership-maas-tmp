@@ -2,8 +2,8 @@ package domain
 
 import (
 	"context"
-	"github.com/netcracker/qubership-maas/msg"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/msg"
+	"maas/maas-service/utils"
 )
 
 //go:generate mockgen -source=bg_domain_service.go -destination=mock/bg_domain_service_mock.go

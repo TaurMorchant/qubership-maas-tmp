@@ -1,8 +1,8 @@
 package helper
 
 import (
-	"github.com/netcracker/qubership-maas/model"
-	"github.com/netcracker/qubership-maas/utils"
+	"maas/maas-service/model"
+	"maas/maas-service/utils"
 )
 
 var healthCtx = utils.CreateContextFromString("kafka_health")

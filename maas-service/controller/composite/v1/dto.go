@@ -1,6 +1,6 @@
 package v1
 
-import "github.com/netcracker/qubership-maas/service/composite"
+import "maas/maas-service/service/composite"
 
 type RegistrationRequest struct {
 	Id         string   `json:"id" validate:"required"`

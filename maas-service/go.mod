@@ -1,4 +1,4 @@
-module github.com/netcracker/qubership-maas
+module maas/maas-service
 
 go 1.22.0
 

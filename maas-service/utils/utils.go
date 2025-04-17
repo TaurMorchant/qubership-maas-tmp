@@ -13,7 +13,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
 	"github.com/netcracker/qubership-core-lib-go/v3/logging"
-	"github.com/netcracker/qubership-maas/msg"
+	"maas/maas-service/msg"
 	"math/rand"
 	"os"
 	"path"
