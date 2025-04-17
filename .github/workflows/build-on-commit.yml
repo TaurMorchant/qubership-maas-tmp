@@ -43,16 +43,6 @@ jobs:
       with:
        args: >
          -Dproject.settings=maas-service/sonar-project.properties
-         -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }}
-         -Dsonar.organization=${{ vars.SONAR_ORGANIZATION }}
-         -Dsonar.host.url=${{ vars.SONAR_HOST_URL }}
+         -Dsonar.projectKey=TaurMorchant_qubership-maas-tmp
+         -Dsonar.organization=vladislav-larkin-test-organization
          -Dsonar.go.coverage.reportPaths=maas-service/coverage.out
-
-    - name: Build and Publish Docker Image
-      uses: netcracker/qubership-workflow-hub/actions/docker-action@c07a5bf430a3c0120e189e6b54061b9bb8dde362
-      with:
-        ref: ${{ github.head_ref || github.ref_name }}
-        tags: ${{ needs.prepare-variables.outputs.tag_snapshot }},${{ needs.prepare-variables.outputs.tag_build_number }}
-        platforms: linux/amd64
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
